@@ -1,0 +1,781 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1435</width>
+    <height>852</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Лабораторная работа 3</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(171, 255, 230);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>10</y>
+      <width>1100</width>
+      <height>800</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>1120</x>
+      <y>10</y>
+      <width>311</width>
+      <height>801</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QLabel" name="Background_color_label">
+       <property name="minimumSize">
+        <size>
+         <width>300</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>150</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(0, 17, 255);
+font: 75 italic 12pt &quot;Times New Roman&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Цвет фона</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="Background_color_in">
+       <property name="minimumSize">
+        <size>
+         <width>240</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>150</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);
+font: 12pt &quot;Times New Roman&quot;;</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>Белый</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Чёрный</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Синий</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Зелёный</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Красный</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="Change_background">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(16, 124, 255);
+color: rgb(255, 255, 255);
+font: 75 italic 12pt &quot;Times New Roman&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Сменить фон</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="Empty_label">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="Seg_color_label">
+       <property name="minimumSize">
+        <size>
+         <width>300</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>150</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(0, 17, 255);
+font: 75 italic 12pt &quot;Times New Roman&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Цвет отрезка</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="Seg_color_in">
+       <property name="minimumSize">
+        <size>
+         <width>240</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>150</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);
+font: 12pt &quot;Times New Roman&quot;;</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>Чёрный</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Белый</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Синий</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Зелёный</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Красный</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Жёлтый</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="Alg_label">
+       <property name="minimumSize">
+        <size>
+         <width>300</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>200</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(0, 17, 255);
+font: 75 italic 12pt &quot;Times New Roman&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Алгоритм построения</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="Alg_in">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>240</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>150</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="mouseTracking">
+        <bool>false</bool>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);
+font: 12pt &quot;Times New Roman&quot;;</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>Брезенхема (с целыми)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Брезенхема (с дробными)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Брезенхема (сглаживание)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Ву</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>ЦДА</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Библиотечные функции</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="Empty_label_3">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="Seg_label">
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(0, 17, 255);
+font: 75 italic 12pt &quot;Times New Roman&quot;;
+</string>
+       </property>
+       <property name="text">
+        <string>Отрезок</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="Coords_seg">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(0, 17, 255);
+font: 75 italic 12pt &quot;Times New Roman&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Координаты концов</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_5">
+       <property name="spacing">
+        <number>7</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="X1_in_label">
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(0, 17, 255);
+font: 75 italic 12pt &quot;Times New Roman&quot;;</string>
+         </property>
+         <property name="text">
+          <string>X1:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="X1_in">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255, 255, 255);
+font: 12pt &quot;Times New Roman&quot;;</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="Y1_in_label">
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(0, 17, 255);
+font: 75 italic 12pt &quot;Times New Roman&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Y1:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="Y1_in">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255, 255, 255);
+font: 12pt &quot;Times New Roman&quot;;</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_6">
+       <item>
+        <widget class="QLabel" name="X2_in_label">
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(0, 17, 255);
+font: 75 italic 12pt &quot;Times New Roman&quot;;</string>
+         </property>
+         <property name="text">
+          <string>X2:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="X2_in">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255, 255, 255);
+font: 12pt &quot;Times New Roman&quot;;</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="Y2_in_label">
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(0, 17, 255);
+font: 75 italic 12pt &quot;Times New Roman&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Y2:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="Y2_in">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255, 255, 255);
+font: 12pt &quot;Times New Roman&quot;;</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QPushButton" name="Make_seg">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(16, 124, 255);
+color: rgb(255, 255, 255);
+font: 75 italic 12pt &quot;Times New Roman&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Построить отрезок</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="Empty_label_2">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="Sheaf_label">
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(0, 17, 255);
+font: 75 italic 12pt &quot;Times New Roman&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Пучок</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QLabel" name="Rad_label">
+         <property name="styleSheet">
+          <string notr="true">color: rgb(0, 17, 255);
+font: 75 italic 12pt &quot;Times New Roman&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Радиус</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="Inter_label">
+         <property name="styleSheet">
+          <string notr="true">color: rgb(0, 17, 255);
+font: 75 italic 12pt &quot;Times New Roman&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Интервал</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <property name="spacing">
+        <number>7</number>
+       </property>
+       <item>
+        <widget class="QLineEdit" name="Rad_in">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255, 255, 255);
+font: 12pt &quot;Times New Roman&quot;;</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="Inter_in">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255, 255, 255);
+font: 12pt &quot;Times New Roman&quot;;</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QLabel" name="Sheaf_coords_label">
+       <property name="styleSheet">
+        <string notr="true">color: rgb(0, 17, 255);
+font: 75 italic 12pt &quot;Times New Roman&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Координаты</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
+        <widget class="QLabel" name="X_in_label">
+         <property name="maximumSize">
+          <size>
+           <width>30</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(0, 17, 255);
+font: 75 italic 12pt &quot;Times New Roman&quot;;</string>
+         </property>
+         <property name="text">
+          <string>X:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="X_in">
+         <property name="maximumSize">
+          <size>
+           <width>100</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255, 255, 255);
+font: 12pt &quot;Times New Roman&quot;;</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="Y_in_label">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>30</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(0, 17, 255);
+font: 75 italic 12pt &quot;Times New Roman&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Y:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="Y_in">
+         <property name="maximumSize">
+          <size>
+           <width>100</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255, 255, 255);
+font: 12pt &quot;Times New Roman&quot;;</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QPushButton" name="Make_sheaf">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(16, 124, 255);
+color: rgb(255, 255, 255);
+font: 75 italic 12pt &quot;Times New Roman&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Построить пучок</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="Compare">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(16, 124, 255);
+color: rgb(255, 255, 255);
+font: 75 italic 12pt &quot;Times New Roman&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Сравнить методы</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="Explore_gradation">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(16, 124, 255);
+color: rgb(255, 255, 255);
+font: 75 italic 12pt &quot;Times New Roman&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Исследовать ступенчатость </string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="Clear">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(16, 124, 255);
+color: rgb(255, 255, 255);
+font: 75 italic 12pt &quot;Times New Roman&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Очистить поле</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1435</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Times New Roman</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 17, 255);</string>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0, 17, 255);</string>
+    </property>
+    <property name="title">
+     <string>Справка</string>
+    </property>
+    <addaction name="author"/>
+    <addaction name="task"/>
+    <addaction name="func"/>
+   </widget>
+   <addaction name="menu"/>
+  </widget>
+  <action name="author">
+   <property name="text">
+    <string>Автор</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Times New Roman</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="task">
+   <property name="text">
+    <string>Условие задачи</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Times New Roman</family>
+     <pointsize>12</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+  </action>
+  <action name="func">
+   <property name="text">
+    <string>Функционал </string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Times New Roman</family>
+     <pointsize>12</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
